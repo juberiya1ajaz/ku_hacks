@@ -19,9 +19,9 @@
 
 We are using Solana for building a secure decentralized and secure payment platform. It is a decentralized, distributed, and open-source blockchain that is designed to be a secure, scalable, and reliable platform for smart contracts.
 
-## 🔐 Best Blockchain Project Using Hedera
+<!-- ## 🔐 Best Blockchain Project Using Hedera
 
-We are using **Hedera’s testnet** to deploy **smart contracts** for our app and make the **decentralized chatroom**. Hedera is a decentralized public network that utilizes the Hashgraph consensus algorithm to overcome the traditional limitations of blockchain and allow one to create the next era of fast, fair, and secure applications
+We are using **Hedera’s testnet** to deploy **smart contracts** for our app and make the **decentralized chatroom**. Hedera is a decentralized public network that utilizes the Hashgraph consensus algorithm to overcome the traditional limitations of blockchain and allow one to create the next era of fast, fair, and secure applications -->
 
 ## 🧠 Challenges we ran into
 
