@@ -1,8 +1,7 @@
-# APP NAME
-
-## 💡 Inspiration
+# ScanCure
 
 ## 💻 What it does
+Most of the time we ran into the problem of unavailability of doctors. The matter is more concerning when we do not know what is happening to us. ScanCure is a web application where users can take a Parkinson's test to check if they have Parkinson's or not. There are many other tests available as well where you can easily know whether your symptoms are concerning or not. These tests include Gastrointestinal Stomach Tumor, Brain Tumor, and Skin Cancer. You can also search for nearby hospitals as well. We have provided a secure and robust payment method based on blockchain. We have a special portal to talk with doctors, you just have to make the payment with help of Solana and get the consultation in one tap. There is also a chatroom for users based on hedera . The application will help people in need of medical care and supervision to understand the implications of different diseases in a very intuitive way. It will also help people to find the right medical care/supervision for themselves.
 
 <!-- ## ⚙️ How we built it
 
