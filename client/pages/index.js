@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
 
     return (
-        <div className='md:mx-28 mx-4 text-white py-4 font-montserrat'>
+        <div className='md:mx-28 mx-4 text-white py-4'>
 
             <div className='md:grid md:grid-cols-2 items-center'>
                 <div className=''>
