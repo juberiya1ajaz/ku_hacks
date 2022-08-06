@@ -1,8 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { HiX } from "react-icons/hi";
 
 export default function Doctors() {
+
+    const [showNavbar, setShowNavbar] = React.useState(false);
+
     return (
         <div>
             <div className='grid place-items-center'>
@@ -36,7 +40,66 @@ export default function Doctors() {
                             </span>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
-                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl'>Book Appointment</button>
+                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl' onClick={() => setShowNavbar(true)}>Book Appointment</button>
+                            {showNavbar ? (
+                                <div>
+                                    <div className=" flex overflow-x-hidden mx-4 md:mx-8 h-screen overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none items-center justify-center w-screen">
+                                        <div className="relative my-6 mx-auto w-screen">
+                                            <div className="ml-[25rem] border-0   shadow-lg relative flex flex-col w-128 bg-gray-800 outline-none focus:outline-none ">
+                                                <div className="flex items-start justify-between p-5 border-solid rounded-t">
+                                                    <div>
+                                                        <div className="text-2xl font-base tracking-wide cursor-pointer text-white">
+                                                            Book Appointment
+                                                        </div>
+                                                    </div>
+
+                                                    <button
+                                                        className="absolute right-6"
+                                                        onClick={() => setShowNavbar(false)}
+                                                        aria-hidden="false"
+                                                        aria-label="button"
+                                                    >
+                                                        <HiX
+                                                            className="h-7 w-7 text-white"
+                                                            aria-hidden="false"
+                                                        />
+                                                    </button>
+                                                </div>
+
+                                                <div className="grid justify-center">
+                                                    <div className="inline-flex w-64 h-1 bg-indigo-500 rounded-full"></div>
+                                                </div>
+
+                                                <div className="grid place-items-center text-xl py-2 gap-2 w-full mb-4">
+                                                    <div className="py-2">
+                                                        <input
+                                                            className="w-96 p-2 active:border-none checked:border-none rounded-md text-xl"
+                                                            placeholder="Senders address"
+                                                            value="0x8aa395Ab97837576aF9cd6946C79024ef1acfdbE"
+                                                        />
+                                                    </div>
+
+                                                    <div className="py-2">
+                                                        <input
+                                                            className="w-96 p-2 active:border-none checked:border-none rounded-md text-xl"
+                                                            placeholder="SOL"
+                                                            value="0.041"
+                                                        />
+                                                    </div>
+
+                                                    <Link href="/chatroom">
+                                                        <button className="bg-blue-600 text-white py-2 px-8 rounded-md ml-2">
+                                                            Do transaction
+                                                        </button>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="opacity-25 fixed inset-0 z-40 h-screen bg-black"></div>
+                                </div>
+                            ) : null}
                         </div>
                     </div>
                 </div>
@@ -65,7 +128,7 @@ export default function Doctors() {
                             </span>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
-                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl'>Book Appointment</button>
+                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl' onClick={() => setShowNavbar(true)}>Book Appointment</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +157,7 @@ export default function Doctors() {
                             </span>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
-                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl'>Book Appointment</button>
+                            <button className='bg-secondary py-2 px-8 rounded-md text-md font-semibold text-white text-xl' onClick={() => setShowNavbar(true)}>Book Appointment</button>
                         </div>
                     </div>
                 </div>
