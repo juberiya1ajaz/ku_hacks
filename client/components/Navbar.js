@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 export default function Navbar() {
 
@@ -9,7 +10,7 @@ export default function Navbar() {
     return (
         <div >
             <nav className="flex items-center py-2 flex-wrap px-4 text-fontColor tracking-wider">
-                <Link to="/"><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">APP NAME
+                <Link href="/"><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">APP NAME
                 </span></Link>
                 <button className="lg:hidden right-0 absolute md:px-8 px-6 mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={() => setShowNavbar(true)} aria-hidden="false" aria-label="button">
                     <HiOutlineMenuAlt3 className="h-7 w-7" aria-hidden="false" />
@@ -40,15 +41,15 @@ export default function Navbar() {
                                     <div className="grid place-items-center text-xl py-2 gap-2 w-full mb-4"
                                     >
 
-                                        <Link to="/">
+                                        <Link href="/">
                                             <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
                                         </Link>
 
-                                        <Link to="/prediction">
+                                        <Link href="/prediction">
                                             <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Disease Prediction</span>
                                         </Link>
 
-                                        <Link to="/doctors">
+                                        <Link href="/doctors">
                                             <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Doctors</span>
                                         </Link>
 
@@ -64,17 +65,19 @@ export default function Navbar() {
                 <div className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" >
                     <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full text-xl lg:items-center items-start flex flex-col lg:h-auto space-x-2 mr-12" >
 
-                        <Link to="/">
+                        <Link href="/">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
                         </Link>
 
-                        <Link to="/prediction">
+                        <Link href="/prediction">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Disease Prediction</span>
                         </Link>
 
-                        <Link to="/doctors">
+                        <Link href="/doctors">
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Doctors</span>
                         </Link>
+
+                        <WalletMultiButton className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center  cursor-pointer text-white bg-secondary hover:bg-blue-400' />
 
                     </div>
                 </div>
