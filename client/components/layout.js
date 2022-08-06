@@ -39,7 +39,7 @@ const App = ({ children, pageProps }) => {
     );
 
     return (
-        <div className="font-montserrat">
+        <div>
 
             <Head>
                 <title>ScanCure</title>
@@ -47,14 +47,14 @@ const App = ({ children, pageProps }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <ConnectionProvider endpoint={endpoint}>
-                <WalletProvider wallets={wallets} autoConnect>
-                    <WalletModalProvider>
-                        <Navbar />
-                        {children}
-                    </WalletModalProvider>
-                </WalletProvider>
-            </ConnectionProvider>
+                <ConnectionProvider endpoint={endpoint}>
+                    <WalletProvider wallets={wallets} autoConnect>
+                        <WalletModalProvider>
+                            <Navbar />
+                            {children}
+                        </WalletModalProvider>
+                    </WalletProvider>
+                </ConnectionProvider>
 
         </div>
 

@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
                 <div className=''>
                     <h1 className='text-5xl'>What else do we have</h1>
-                    <p className='text-xl md:text-3xl py-4 tracking-wider'>APP NAME is a web app where you can:
+                    <p className='text-xl md:text-3xl py-4 tracking-wider'>ScanCure is a web app where you can:
                     </p>
                     <ul className="text-2xl">
                         <li className="list-disc">Smart disease prediction.</li>
